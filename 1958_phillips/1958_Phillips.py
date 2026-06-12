@@ -1,11 +1,21 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+chomage_path = os.path.join(
+    BASE_DIR, "Data", "Unemployment Rate in the UK_1760-2016_annuel.csv"
+)
+inflation_path = os.path.join(
+    BASE_DIR, "Data", "Consumer Price Inflation in the UK 1210-2016.csv"
+)
 
 # 1. Chargement des fichiers de données
 # Assurez-vous que les fichiers CSV sont dans le même répertoire que votre script
-df_chomage = pd.read_csv('Data/Unemployment Rate in the UK_1760-2016_annuel.csv')
-df_inflation = pd.read_csv('Data/Consumer Price Inflation in the UK 1210-2016.csv')
+df_chomage = pd.read_csv(chomage_path)
+df_inflation = pd.read_csv(inflation_path)
 
 # 2. Préparation des données : extraction de l'année
 # On extrait l'année pour pouvoir fusionner les deux bases de données
