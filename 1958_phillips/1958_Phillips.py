@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 # 1. Chargement des fichiers de données
 # Assurez-vous que les fichiers CSV sont dans le même répertoire que votre script
-df_chomage = pd.read_csv('DATA/Unemployment Rate in the UK_1760-2016_annuel.csv')
-df_inflation = pd.read_csv('DATA/Consumer Price Inflation in the UK 1210-2016.csv')
+df_chomage = pd.read_csv('Data/Unemployment Rate in the UK_1760-2016_annuel.csv')
+df_inflation = pd.read_csv('Data/Consumer Price Inflation in the UK 1210-2016.csv')
 
 # 2. Préparation des données : extraction de l'année
 # On extrait l'année pour pouvoir fusionner les deux bases de données
